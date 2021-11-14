@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>ELSA Speak</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="assets/img/logo.png" alt="Elsa Logo" />
+        <p>ELSA</p>
+      </div>
+    </header>
+
+    <div class="banner">
+      <div class="text">
+        <h1>
+          App luyện nói <br />
+          & giao tiếp tiếng anh thời 4.0
+        </h1>
+        <p>Với ELSA Speak - ai cũng có thể nói tiếng anh hay</p>
+        <a href="#register-form" class="btn">Đăng ký ngay</a>
+      </div>
+    </div>
+
+    <div class="register-form" id="register-form">
+      <form name="submit-form" onsubmit="alert('Đăng ký thành công!')">
+        <h1>cùng ứng dụng elsa nói tiếng anh "thả ga"</h1>
+
+        <div class="register">
+          <div class="form-group">
+            <label for="name"><i class="far fa-user"></i>Họ Tên *</label>
+            <input type="text" id="name" name="name" minlength="4" required/>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone"><i class="fas fa-mobile-alt"></i>Số điện thoại *</label>
+            <input type="text" maxlength="11" pattern="\d{11}" title="Please enter exactly 11 digits" required />
+          </div>
+          
+          <div class="form-group">
+            <label for="email"><i class="far fa-envelope"></i>Email *</label>
+            <input type="email" id="email" name="email" required/>
+          </div>
+         
+          <div class="radio-group">
+            
+              <input class="radio" type="radio" name="courses" id="yearly" value="yearly" required>
+              <label for="courses">Gói học 1 năm</label> 
+          
+              <input class="radio" type="radio" name="courses" id="lifetime" value="lifetime">
+              <label for="courses">Gói học 1 năm</label> 
+         
+              <div class="price yearly" hidden >
+                989.000 VND
+              </div>
+              <div class="price lifetime" hidden>
+                1.995.000 VND
+              </div>
+           
+          </div>
+          
+              
+          
+          <button type="submit" class="btn btn-lg">Gửi đăng ký</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="route">
+      
+        <h1>Cá nhân hóa lộ trình học</h1>
+        <p>Làm bài kiểm tra đầu vào với ELSA trong 5 phút và bạn sẽ có:</p>
+
+      <div class="phone-grid">
+        <div class="phone" >
+          <img src="assets/img/phone1.png" alt="phone 1" />
+          <p>Trí tuệ nhân tạo trả về bạn số điểm <span>"chuẩn bản xứ"</span></p>
+        </div>
+
+        <div class="phone" >
+          <img src="assets/img/phone2.png" alt="phone 2" />
+          <p>
+            <span>Ngay lập tức</span>, bạn biết mình phát âm sai ở đâu qua những gam màu
+            trực quan sinh động.
+          </p>
+        </div>
+
+        <div class="phone" >
+          <img src="assets/img/phone3.png" alt="phone 3" />
+          <p><span>Công nghệ nhận diện</span> giọng nói chuẩn đến từng âm tiết.</p>
+        </div>
+
+        <div class="phone" >
+          <img src="assets/img/phone4.png" alt="phone 4" />
+          <p>
+            ELSA sẽ <span>lập lộ trình học cá nhân hóa</span> dựa trên các chỉ số bài kiểm
+            tra đầu vào của bạn.
+          </p>
+        </div>
+      </div>
+      <a href="#register-form" class="btn btn-center">Đăng ký ngay</a>
+    </div>
+  </body>
+</html>
